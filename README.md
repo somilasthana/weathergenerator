@@ -65,3 +65,9 @@ Our weather simulations makes many assumptions. It is worth listing them here
 * The model ignores interdependencies between temperature, pressure and humididy measure. These three measure draws from independent distribution.
 * The model does uses relation between weather condition and temperature, pressure and humididy measure or effect of atmosphere, topography, geography, oceanography . Basically it learns from past data and these depdendies are somewhat caputured in the data.
 * The model does not set sea-level for 36 cities ( although adding it wont be a big work ) while generating data.
+
+### Dependencies
+This software needs Python3 along with pandas, numpy and sklearn. run.sh has details to run. The simulated data is generated on console.
+The output will look like 
+![Final Output](https://github.com/somilasthana/weathergenerator/blob/master/pics/weather_generation_output.png)
+
