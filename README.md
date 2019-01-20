@@ -50,8 +50,11 @@ For illustration purpose here is snapshot of temperature dataset
 ![Temperature Details](https://github.com/somilasthana/weathergenerator/blob/master/pics/temperature_details.png)
 
 One can group temperature measures ( it is measured in Kelvin ) for each day of the month and if we plot a histogram we see something like this. We plotted for city Vancouver for 01-01 ( 1 Jan )
+
 ![Temperature Histogram](https://github.com/somilasthana/weathergenerator/blob/master/pics/temperature_distribution.png)
 One can easily make out some form of distribution and can use Kernel Density Model ( which is a generative model ) to smoothen the curve as shown below
+
 ![Temperature Smooth](https://github.com/somilasthana/weathergenerator/blob/master/pics/temperature_smooth.png)
+
 This KDE model can use be used randomly generate temperature for that particular month day. Similar KDE models where build for Pressure and Humidity measures.
 
