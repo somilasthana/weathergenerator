@@ -65,6 +65,9 @@ Our weather simulations makes many assumptions. It is worth listing them here
 * The model ignores interdependencies between temperature, pressure and humididy measure. These three measure draws from independent distribution.
 * The model does uses relation between weather condition and temperature, pressure and humididy measure or effect of atmosphere, topography, geography, oceanography . Basically it learns from past data and these depdendies are somewhat caputured in the data.
 * The model does not set sea-level for 36 cities ( although adding it wont be a big work ) while generating data.
+* Limitation of this software is that every run will create models from Kaggle data and then generate weather data. The better solution would be to generate just once and pickle it ( store it ) so that next time it be used instead of creating models.
+* As the weather data is generated they are not used to put remodel the probabilities and distibutions. 
+* Effect of global warming and population explosion is not taken into consideration when generating weather data.
 
 ### Dependencies
 This software needs Python3 along with pandas, numpy and sklearn. run.sh has details to run. The simulated data is generated on console.
@@ -74,17 +77,19 @@ The output will look like
 
 ### Code File Details
 
-cityinfo.py             config.py               earth.py                measuremodels.py        weatherdriver.py        weatherstate.py
-cityweathermodel.py     deltachange.py          generateweather.py      utils.py                weathermodel.py         weathertype.py
+                                           
+     deltachange.py                                        
 
-FileName            | Markup           | 
+FileName            | Description      | 
 --------------------|------------------|
-Intra-word emphasis | So A\*maz\*ing   | 
-Strikethrough       | \~~Much wow\~~   | 
-Underline [^under]  | \_So doge\_      | 
-Quote [^quote]      | \"Such editor\"  | 
-Highlight           | \==So good\==    |
-Superscript         | hoge\^(fuga)     |
-Autolink            | http://t.co      | 
-Footnotes           | [\^4] and [\^4]: | 
+utils.py            | pandas read utility file  | 
+weathertype.py      | different weather types  | 
+config.py           | config implemented as pd.Series     | 
+cityinfo.py         | information on 36 cities  | 
+measuremodels.py    | models to discover temperature, pressure, humidity distribution  |
+weatherstate.py     | to keep daily weather states    |
+cityweathermodel.py | keeps weather details ( condition, temperature, pressure, humidity per city level | 
+weathermodel.py     | two models on weather condition another weather measures |
+weatherdriver.py    | driver code with creates the models from Kaggle
+generateweather.py  | main code which will generate data for cities
 
