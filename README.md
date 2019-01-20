@@ -72,3 +72,19 @@ The output will look like
 
 ![Final Output](https://github.com/somilasthana/weathergenerator/blob/master/pics/weather_generation_output.png)
 
+### Code File Details
+
+cityinfo.py             config.py               earth.py                measuremodels.py        weatherdriver.py        weatherstate.py
+cityweathermodel.py     deltachange.py          generateweather.py      utils.py                weathermodel.py         weathertype.py
+
+FileName            | Markup           | 
+--------------------|------------------|
+Intra-word emphasis | So A\*maz\*ing   | 
+Strikethrough       | \~~Much wow\~~   | 
+Underline [^under]  | \_So doge\_      | 
+Quote [^quote]      | \"Such editor\"  | 
+Highlight           | \==So good\==    |
+Superscript         | hoge\^(fuga)     |
+Autolink            | http://t.co      | 
+Footnotes           | [\^4] and [\^4]: | 
+
