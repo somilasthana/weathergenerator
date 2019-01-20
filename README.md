@@ -69,5 +69,6 @@ Our weather simulations makes many assumptions. It is worth listing them here
 ### Dependencies
 This software needs Python3 along with pandas, numpy and sklearn. run.sh has details to run. The simulated data is generated on console.
 The output will look like 
+
 ![Final Output](https://github.com/somilasthana/weathergenerator/blob/master/pics/weather_generation_output.png)
 
