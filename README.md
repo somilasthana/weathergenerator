@@ -43,6 +43,10 @@ Cloudy, Rainy, Snow, Clearsky. This can be calculated by applying Bayes probabil
 P(next_condition = Snow | present_condition = Cloudy ) 
             = P ( next_condition = Snow and present_condition = Cloudy) / P( present_condition = Cloudy )
 ```
+The following screen-shot shows the weather condition transitions table ( somewhat similar to Hidden Markov Model). The columns represent possible next weather condition while row labels / indices represent present weather condition. Each cell shows the probability of next weather condition given present weather condition
+![Weather Table](https://github.com/somilasthana/weathergenerator/blob/master/pics/weather-state-table.png)
+
+
 We build these models for every day of the year for all cities and for all weather conditions. Listing all probabilities we use numpy random function with list of proabililites as weights to decide the next weather condition.
 
 * temperature.csv, pressure.csv, humidity.csv
