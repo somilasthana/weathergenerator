@@ -2,6 +2,10 @@ from refactor.contract.process import Process
 
 
 class WeatherGeneratorProcess(Process):
+    """
+    This is interface that Simulator enforces when it add tasks to its list to run.
+    Simulator expects each task that is added to the its internal list will implement run_method and get_state
+    """
 
     def __init__(self, weather_algorithm):
         self.weather_algorithm = weather_algorithm
