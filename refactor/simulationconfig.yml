@@ -1,0 +1,44 @@
+simulation_config:
+  name: CityWeatherSimulator
+  iterations: 1000
+  maximum_task_to_run: 200
+  city_config:
+    default:
+      model_used: random
+    Vancouver:
+      model_used: naive
+    Denver:
+      model_used: random
+    Nashville:
+      model_used: latlong
+
+simulation_report:
+  type: filebased
+  details:
+    path: .
+    filename: weather_data.output
+    mode: w
+    delimiter_type: cba
+    keys:
+      - cityname
+      - latitude
+      - longitude
+      - sea_level
+      - time
+      - weather_condition
+      - temperature
+      - pressure
+      - humidity
+    keys_separator:
+      - "|"
+      - ","
+      - ","
+      - "|"
+      - "|"
+      - "|"
+      - "|"
+      - "|"
+
+
+
+
