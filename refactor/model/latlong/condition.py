@@ -9,9 +9,9 @@ class LatLongCondition(WeatherProps):
         This is not a perfect model instead of using Linear Regression to find weather condition one should use
         the probabilities of likelyhood of ['Sunny', 'Cloudy', 'Rainy', 'Snow', 'Storm', "ThunderStorm", "Foggy",
                                    "Sandstorm", "Smog", "Snowstorm", "Tornado", "Windy"]
-        One choice was use of Logistic Regression.
+        Obvious Choice is to use Logistic Regression.
         One issue with Linear Regression is that it outputs a continuous value instead of discrete.
-        :param city_details:
+        :param city_details: Instance of CityMetaAttributes
 
         The data used is following form:
 
