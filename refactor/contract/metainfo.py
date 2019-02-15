@@ -1,20 +1,24 @@
 import abc
 
+
 class CityDetails:
+    """
+    This interface mandates the structure of City Details information that Simulator may need
+    """
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
     def city_name(self):
-        return None
+        pass
 
     @abc.abstractmethod
     def city_lat(self):
-        return float(0.0)
+        pass
 
     @abc.abstractmethod
     def city_long(self):
-        return float(0.0)
+        pass
 
     @abc.abstractmethod
     def city_sealevel(self):
-        return 0
+        pass

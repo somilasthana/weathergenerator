@@ -2,6 +2,9 @@ import abc
 
 
 class FormatterInterface:
+    """
+    Interface ot implement different formatter types depending on requirements
+    """
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod

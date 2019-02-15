@@ -2,6 +2,9 @@ import abc
 
 
 class SimulationTick:
+    """
+    Time Interface by users to get system time, hour, day, month and year.
+    """
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod

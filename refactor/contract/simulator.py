@@ -2,6 +2,9 @@ import abc
 
 
 class SimulatorInterface:
+    """
+    This interface needs to be implemented by any custom Simulator by the client of that Simulator
+    """
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod

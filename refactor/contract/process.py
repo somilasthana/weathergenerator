@@ -2,6 +2,9 @@ import abc
 
 
 class Process:
+    """
+    Simulator Object runs task each task should implement Process Interface
+    """
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
