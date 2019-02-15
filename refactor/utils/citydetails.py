@@ -1,7 +1,8 @@
 from refactor.utils.state import State
 import pandas as pd
 from refactor.simerror.paramerror import InvalidParamException
-
+from refactor.simerror.unknown import UnknownCityAttributesException
+from refactor.simlog.printlog import printlog
 
 class CityInformation(State):
     """
@@ -36,8 +37,18 @@ class CityMetaAttributes:
         Iterates thru each row and puts in dictionary
         :return: None
         """
-        pd_city_attr = pd.read_csv(self.city_meta_file)
+        try:
+            pd_city_attr = pd.read_csv(self.city_meta_file)
+        except FileNotFoundError:
+            printlog("CityMetaAttributes", "pd.DataFrame failed {} is not valid".format(self.city_meta_file))
+            raise UnknownCityAttributesException("file {} is not found".format(self.city_meta_file))
+
+        if "City" not in pd_city_attr.columns:
+            printlog("CityMetaAttributes", "pd.DataFrame failed {} is not valid".format(self.city_meta_file))
+            raise UnknownCityAttributesException("pd.DataFrame failed {} is not valid".format(self.city_meta_file))
+
         pd_city_attr = pd_city_attr.set_index("City")
+
         city_list = list(pd_city_attr.index)
         for cityname in city_list:
             self.cities[cityname] = CityInformation(cityname=cityname,
