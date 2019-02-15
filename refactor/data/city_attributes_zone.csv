@@ -1,0 +1,37 @@
+,City,Country,Latitude,Longitude,Zone
+0,Vancouver,Canada,49.24966,-123.119339,America/Vancouver
+1,Portland,United States,45.523449,-122.676208,America/Los_Angeles
+2,San Francisco,United States,37.774929,-122.419418,America/Los_Angeles
+3,Seattle,United States,47.606209,-122.33206899999999,America/Los_Angeles
+4,Los Angeles,United States,34.052231,-118.243683,America/Los_Angeles
+5,San Diego,United States,32.715328,-117.157257,America/Los_Angeles
+6,Las Vegas,United States,36.174969,-115.137222,America/Los_Angeles
+7,Phoenix,United States,33.44838,-112.07404299999999,America/Phoenix
+8,Albuquerque,United States,35.084492,-106.65113799999999,America/Denver
+9,Denver,United States,39.739151,-104.984703,America/Denver
+10,San Antonio,United States,29.424120000000002,-98.493629,America/Chicago
+11,Dallas,United States,32.783058000000004,-96.806671,America/Chicago
+12,Houston,United States,29.763281,-95.363274,America/Chicago
+13,Kansas City,United States,39.099731,-94.578568,America/Chicago
+14,Minneapolis,United States,44.979969,-93.26384,America/Chicago
+15,Saint Louis,United States,38.62727,-90.197891,America/Chicago
+16,Chicago,United States,41.850029,-87.650047,America/Chicago
+17,Nashville,United States,36.165890000000005,-86.784439,America/Chicago
+18,Indianapolis,United States,39.768378999999996,-86.158043,America/Indiana/Indianapolis
+19,Atlanta,United States,33.749001,-84.387978,America/New_York
+20,Detroit,United States,42.331429,-83.045753,America/Detroit
+21,Jacksonville,United States,30.332179999999997,-81.655647,America/New_York
+22,Charlotte,United States,35.227089,-80.843132,America/New_York
+23,Miami,United States,25.774269,-80.193657,America/New_York
+24,Pittsburgh,United States,40.44062,-79.995888,America/New_York
+25,Toronto,Canada,43.700111,-79.416298,America/Toronto
+26,Philadelphia,United States,39.952339,-75.163788,America/New_York
+27,New York,United States,40.714271999999994,-74.005966,America/New_York
+28,Montreal,Canada,45.508839,-73.587807,America/Montreal
+29,Boston,United States,42.358429,-71.05976899999999,America/New_York
+30,Beersheba,Israel,31.25181,34.791302,Asia/Jerusalem
+31,Tel Aviv District,Israel,32.083328,34.799999,Asia/Jerusalem
+32,Eilat,Israel,29.55805,34.948212,Asia/Jerusalem
+33,Haifa,Israel,32.815559,34.98917,Asia/Jerusalem
+34,Nahariyya,Israel,33.005859,35.09409,Asia/Jerusalem
+35,Jerusalem,Israel,31.769039000000003,35.216331,Asia/Jerusalem
