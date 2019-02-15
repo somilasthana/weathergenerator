@@ -12,6 +12,15 @@ class LatLongCondition(WeatherProps):
         One choice was use of Logistic Regression.
         One issue with Linear Regression is that it outputs a continuous value instead of discrete.
         :param city_details:
+
+        The data used is following form:
+
+        Time	Latitude	Longitude	Weather Condition ( details can be found in refactor.constant.WeatherConditionCnt
+        0	13	31.769039	35.216331	1
+        1	14	31.769039	35.216331	2
+        2	15	31.769039	35.216331	2
+        3	16	31.769039	35.216331	3
+        4	17	31.769039	35.216331	4
         """
         self.city_details = city_details
         self.lat_coefficent = 0.014

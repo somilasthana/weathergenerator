@@ -17,6 +17,15 @@ class LatLongTemperature(WeatherProps):
 
         Code for applying Linear Regression Training Model is not included in this code.
         :param city_details: Instance of CityMetaAttributes
+
+        Training Data used ( showing few rows )
+        Time	Latitude	Longitude	Temperature
+        0	13	31.769039	35.216331	303.5
+        1	14	31.769039	35.216331	289.5
+        2	15	31.769039	35.216331	302.5
+        3	16	31.769039	35.216331	302.5
+        4	17	31.769039	35.216331	299.5
+
         """
         self.city_details = city_details
         self.lat_coefficent = -0.76
